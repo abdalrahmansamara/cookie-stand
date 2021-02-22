@@ -5,6 +5,7 @@ const Seattle = {
   maxCus: 65,
   avgCookieSale: 6.3,
   cookies: [],
+  customersPerHour: [],
   sum: 0,
   times: ['6am: ', '7am: ', '8am: ', '9am: ', '10am: ', '11am: ', '12pm: ', '1pm: ', '2pm: ', '3pm: ', '4pm: ', '5pm: ', '6pm: ', '7pm: '],
   random: function () {
@@ -13,6 +14,7 @@ const Seattle = {
   render: function () {
     for (let i = 0; i < 14; i++) {
       let b = this.random(this.minCus, this.maxCus);
+      this.customersPerHour.push(b);
       this.cookies.push(Math.ceil(this.avgCookieSale * b));
       this.sum += this.cookies[i];
     }
@@ -41,6 +43,7 @@ const Tokyo = {
   maxCus: 24,
   avgCookieSale: 1.2,
   cookies: [],
+  customersPerHour: [],
   sum: 0,
   times: ['6am: ', '7am: ', '8am: ', '9am: ', '10am: ', '11am: ', '12pm: ', '1pm: ', '2pm: ', '3pm: ', '4pm: ', '5pm: ', '6pm: ', '7pm: '],
   random: function () {
@@ -49,6 +52,7 @@ const Tokyo = {
   render: function () {
     for (let i = 0; i < 14; i++) {
       let b = this.random(this.minCus, this.maxCus);
+      this.customersPerHour.push(b);
       this.cookies.push(Math.ceil(this.avgCookieSale * b));
       this.sum += this.cookies[i];
     }
@@ -75,6 +79,7 @@ const Dubai = {
   minCus: 11,
   maxCus: 38,
   avgCookieSale: 3.7,
+  customersPerHour: [],
   cookies: [],
   sum: 0,
   times: ['6am: ', '7am: ', '8am: ', '9am: ', '10am: ', '11am: ', '12pm: ', '1pm: ', '2pm: ', '3pm: ', '4pm: ', '5pm: ', '6pm: ', '7pm: '],
@@ -84,6 +89,7 @@ const Dubai = {
   render: function () {
     for (let i = 0; i < 14; i++) {
       let b = this.random(this.minCus, this.maxCus);
+      this.customersPerHour.push(b);
       this.cookies.push(Math.ceil(this.avgCookieSale * b));
       this.sum += this.cookies[i];
     }
@@ -111,6 +117,7 @@ const Paris = {
   maxCus: 38,
   avgCookieSale: 2.3,
   cookies: [],
+  customersPerHour: [],
   sum: 0,
   times: ['6am: ', '7am: ', '8am: ', '9am: ', '10am: ', '11am: ', '12pm: ', '1pm: ', '2pm: ', '3pm: ', '4pm: ', '5pm: ', '6pm: ', '7pm: '],
   random: function () {
@@ -119,6 +126,7 @@ const Paris = {
   render: function () {
     for (let i = 0; i < 14; i++) {
       let b = this.random(this.minCus, this.maxCus);
+      this.customersPerHour.push(b);
       this.cookies.push(Math.ceil(this.avgCookieSale * b));
       this.sum += this.cookies[i];
     }
@@ -146,6 +154,7 @@ const Lima = {
   maxCus: 16,
   avgCookieSale: 4.6,
   cookies: [],
+  customersPerHour: [],
   sum: 0,
   times: ['6am: ', '7am: ', '8am: ', '9am: ', '10am: ', '11am: ', '12pm: ', '1pm: ', '2pm: ', '3pm: ', '4pm: ', '5pm: ', '6pm: ', '7pm: '],
   random: function () {
@@ -154,6 +163,7 @@ const Lima = {
   render: function () {
     for (let i = 0; i < 14; i++) {
       let b = this.random(this.minCus, this.maxCus);
+      this.customersPerHour.push(b);
       this.cookies.push(Math.ceil(this.avgCookieSale * b));
       this.sum += this.cookies[i];
     }
@@ -181,6 +191,7 @@ Tokyo.render();
 Dubai.render();
 Paris.render();
 Lima.render();
+console.log(Seattle.customersPerHour);
 
 
 
