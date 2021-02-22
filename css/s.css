@@ -1,4 +1,44 @@
 .sizing {
     display: block;
     margin: auto;
+    
+}
+
+table th {
+    background-color: greenyellow;
+    border-radius: 10px;
+    padding: 5px;
+    font-family: comic sans ms;
+    border-style: ridge;
+    /* border-color:rgba(255, 208, 0, 0.986); */
+}
+table td {
+    font-family: comic sans ms;
+    padding: 5px;
+    background-color: orchid;
+    border-radius: 10px;
+    text-align: center;
+
+}
+td:hover
+{
+    border-style: ridge;
+    border-color:rgba(255, 208, 0, 0.986);
+    font-weight: bold;
+}
+th:hover
+{
+    border-style: ridge;
+    border-color:rgba(255, 208, 0, 0.986);
+    font-weight: bold;
+}
+h1 {
+    font-family: comic sans ms;
+}
+.word {
+    text-align: center;
+}
+.cookieImage {
+    display: block;
+    margin: auto;
 }
