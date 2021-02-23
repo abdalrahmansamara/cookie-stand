@@ -22,8 +22,9 @@ const firstRow = function(){
   tableElement.appendChild(tr1Element);
 };
 firstRow();
+let mat = ['name'];
 function Town(name, minCus, maxCus, avgCookieSale) {
-  this.name = name;
+  this[mat[0]] = name;
   this.minCus = minCus;
   this.maxCus = maxCus;
   this.avgCookieSale = avgCookieSale;

@@ -42,3 +42,14 @@ h1 {
     display: block;
     margin: auto;
 }
+h2, ul {
+    color: rgb(187, 16, 187);
+    font-family: comic sans ms;
+    list-style:url('../images/cookies.png')
+}
+h3 {
+    color:  rgb(187, 16, 187);
+    font-family: comic sans ms;
+    text-align: center;
+
+}
