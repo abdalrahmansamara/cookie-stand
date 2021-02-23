@@ -74,19 +74,18 @@ Lima.render();
 
 const lastRow = function(){
   const tr1Element = document.createElement('tr');
-  const td1Element = document.createElement('td');
-  td1Element.textContent = 'Totals';
-  tr1Element.appendChild(td1Element);
+  const th1Element = document.createElement('th');
+  th1Element.textContent = 'Totals';
+  tr1Element.appendChild(th1Element);
   for(let i = 0; i<sumOfSums.length; i++)
   {
-    const tdElement = document.createElement('td');
+    const tdElement = document.createElement('th');
     tdElement.textContent = `${sumOfSums[i]} cookies`;
     tr1Element.appendChild(tdElement);
   }
   tableElement.appendChild(tr1Element);
 };
 lastRow();
-
 function generateRandomNumber(min, max) {
   return Math.ceil(Math.random() * (max - min + 1) + min);
 }
