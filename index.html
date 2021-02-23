@@ -6,13 +6,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/s.css">
+    <style>
+        .mySlides {display:inline;
+        margin-left:400px;
+    height: 250px; }
+        </style>
 </head>
 <body style="background-color:azure;">
     <h1 style="color:dodgerblue; font-size: 40px;font-size: 38px;">Welocome to our website, this website is specified for selling Cookies!!</h1>
-    <img class = "sizing" src="images/salmon.png" alt="block">
+    <div class="w3-content w3-section" style="max-width:500px">
+        <img class="mySlides" src="assets/chinook.jpg" style="width:100%">
+        <img class="mySlides" src="assets/cutter.jpeg" style="width:100%">
+        <img class="mySlides" src="assets/family.jpg" style="width:100%">
+        <img class="mySlides" src="assets/fish.jpg" style="width:100%">
+        <img class="mySlides" src="assets/frosted-cookie.jpg" style="width:100%">
+        <img class="mySlides" src="assets/salmon.png" style="width:100%">
+        <img class="mySlides" src="assets/shirt.jpg" style="width:100%">
+      </div>
+      <script>
+        var myIndex = 0;
+        carousel();
+        
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}    
+          x[myIndex-1].style.display = "block";  
+          setTimeout(carousel, 2000); // Change image every 2 seconds
+        }
+        </script>
+    <!-- <img class = "sizing" src="images/salmon.png" alt="block"> -->
     <h1 class="word">Press on the cookie below to view our sales</h1>
     <a href="sales.html">
-        <img alt="Cookies" src="cookie.png" class="cookieImage">
+        <img alt="Cookies" src="images/cookie.png" class="cookieImage">
         </a>
+        <article>
+            <h2>Seattle</h2>
+            <ul>
+                <li>Hours Open: 6am-7pm</li>
+                <li>Contact Info : 222-222-2222</li>
+                <li>Location: Broadway-Seattle, at 38th avenu</li>
+            </ul>
+            <h2>Tokyo</h2>
+            <ul>
+                <li>Hours Open: 6am-7pm</li>
+                <li>Contact Info : 333-333-3333</li>
+                <li>Location: Anigashima-Tokyo, chineese nabourhood</li>
+            </ul>
+            <h2>Dubai</h2>
+            <ul>
+                <li>Hours Open: 6am-7pm</li>
+                <li>Contact Info : 444-444-4444</li>
+                <li>Location: Alain-UAE, al-mashariq circle</li>
+            </ul>
+            <h2>Paris</h2>
+            <ul>
+                <li>Hours Open: 6am-7pm</li>
+                <li>Contact Info : 444-444-4444</li>
+                <li>Location: France-Paris, beside the famous tower</li>
+            </ul>
+            <h2>Lima</h2>
+            <ul>
+                <li>Hours Open: 6am-7pm</li>
+                <li>Contact Info : 555-555-5555</li>
+                <li>Location: don't know-Lima, at 35th avenu</li>
+            </ul>
+        </article>
+        <footer>
+            <h2 style="text-align: center;"> <br> <br> Contact US!</h2>
+            <h3>Email: abdalrahman@yahoo.com</h3>
+            <h3>Personal phone: 078********</h3>
+            <h3>All Rights Reserved&copy; 2021</h3>
+        </footer>
 </body>
 </html>
