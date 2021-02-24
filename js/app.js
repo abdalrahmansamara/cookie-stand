@@ -17,7 +17,7 @@ const firstRow = function(){
     tr1Element.appendChild( thElement );
   }
   const thElement = document.createElement( 'th' );
-  thElement.textContent = 'Daily Location Total';
+  thElement.textContent = 'Daily Total';
   tr1Element.appendChild( thElement );
   tableElement.appendChild( tr1Element );
 };
@@ -72,9 +72,9 @@ Dubai.render();
 Paris.render();
 Lima.render();
 
-
 const lastRow = function(){
   const tr1Element = document.createElement( 'tr' );
+  tr1Element.id = 'asd';
   const th1Element = document.createElement( 'th' );
   th1Element.textContent = 'Totals';
   tr1Element.appendChild( th1Element );
@@ -86,7 +86,31 @@ const lastRow = function(){
   }
   tableElement.appendChild( tr1Element );
 };
+
+
+const newShop = document.getElementById( 'addCity' );
+newShop.addEventListener ( 'submit', function ( event ) {
+  event.preventDefault();
+  const name = event.target.branchName.value;
+  const min = event.target.minimumCustomers.value;
+  const max = event.target.maximumCustomers.value;
+  const avg = event.target.averageSalesPerCustomer.value;
+  const shop = new Town ( name,min,max,avg ) ;
+  newShop.reset();
+  document.querySelector( 'table tr:last-child' ).remove();
+  shop.render();
+  lastRow();
+
+
+} );
 lastRow();
+
+
+
+
+
+
+
 function generateRandomNumber( min, max ) {
   return Math.ceil( Math.random() * ( max - min + 1 ) + min );
 }

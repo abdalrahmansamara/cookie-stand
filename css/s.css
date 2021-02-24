@@ -10,7 +10,16 @@ table th {
     padding: 5px;
     font-family: comic sans ms;
     border-style: ridge;
+    font-weight: 100;
     /* border-color:rgba(255, 208, 0, 0.986); */
+}
+table td:first-child {
+    background-color: wheat;
+    border-radius: 10px;
+}
+table td:last-child {
+    background-color: wheat;
+    border-radius: 10px;
 }
 table td {
     font-family: comic sans ms;
@@ -18,6 +27,8 @@ table td {
     background-color: orchid;
     border-radius: 10px;
     text-align: center;
+    font-weight: 100;
+    
 
 }
 td:hover
@@ -34,6 +45,7 @@ th:hover
 }
 h1 {
     font-family: comic sans ms;
+    text-align: center;
 }
 .word {
     text-align: center;
@@ -53,3 +65,55 @@ h3 {
     text-align: center;
 
 }
+  input {
+    font-family: comic sans ms; 
+      display: block;
+      height: 25px;
+      margin: auto;
+      margin: 3px auto;
+      border-radius: 10px;
+      border-color: orchid;
+      background-image: linear-gradient(to right, #00ffff, rgb(25, 199, 199));
+  }
+  fieldset {
+    font-family: comic sans ms; 
+      width: 30%;
+      margin: auto;
+      border-style:dashed;
+      border-radius: 10px;
+      border-color: rgba(0, 224, 253, 0.904);
+      text-align: center;   
+  }
+  label {
+      text-align: center;
+      
+      
+  }
+  legend {
+      /* margin: auto; */
+      border-style:outset;
+      background: rgba(0, 224, 253, 0.904);
+      margin-bottom: 15px;
+      
+  }
+  button {
+    background-color: rgba(0, 224, 253, 0.904);
+    font-family: comic sans ms; 
+    border-radius: 10px;
+    border-color: orchid;
+    color: rgba(61, 28, 138, 0.815);
+    padding: 5px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 15px 20px;
+    cursor: pointer;
+  }
+  button:hover{
+    border-color:rgba(255, 208, 0, 0.986);
+    background-image: linear-gradient(to right, #00ffff, rgb(25, 199, 199));
+/*     transition: cubic-bezier(0.77, 0, 0.175, 1) 5s ease-in-out; */ 
+    color: #FFFFFF;
+  }
+  table tr:last-child { background:transparent; }
