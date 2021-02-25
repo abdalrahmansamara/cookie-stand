@@ -3,12 +3,14 @@
     margin: auto;
     
 }
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap');
 
 table th {
     background-color: greenyellow;
     border-radius: 10px;
     padding: 5px;
-    font-family: comic sans ms;
+    font-family: 'Comic Neue', cursive; 
     border-style: ridge;
     font-weight: 100;
     /* border-color:rgba(255, 208, 0, 0.986); */
@@ -56,7 +58,7 @@ h1 {
 }
 h2, ul {
     color: rgb(187, 16, 187);
-    font-family: comic sans ms;
+    font-family: 'Nanum Brush Script', cursive;
     list-style:url('../images/cookies.png')
 }
 h3 {
