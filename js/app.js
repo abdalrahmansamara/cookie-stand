@@ -92,9 +92,9 @@ const newShop = document.getElementById( 'addCity' );
 newShop.addEventListener ( 'submit', function ( event ) {
   event.preventDefault();
   const name = event.target.branchName.value;
-  const min = event.target.minimumCustomers.value;
-  const max = event.target.maximumCustomers.value;
-  const avg = event.target.averageSalesPerCustomer.value;
+  const min = Number( event.target.minimumCustomers.value );
+  const max = Number( event.target.maximumCustomers.value );
+  const avg = Number( event.target.averageSalesPerCustomer.value );
   const shop = new Town ( name,min,max,avg ) ;
   newShop.reset();
   document.querySelector( 'table tr:last-child' ).remove();
