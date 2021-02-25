@@ -74,7 +74,7 @@ Lima.render();
 
 const lastRow = function(){
   const tr1Element = document.createElement( 'tr' );
-  tr1Element.id = 'asd';
+  tr1Element.classList.add( 'mystyle' );
   const th1Element = document.createElement( 'th' );
   th1Element.textContent = 'Totals';
   tr1Element.appendChild( th1Element );

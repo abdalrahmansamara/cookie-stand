@@ -116,4 +116,8 @@ h3 {
 /*     transition: cubic-bezier(0.77, 0, 0.175, 1) 5s ease-in-out; */ 
     color: #FFFFFF;
   }
-  table tr:last-child { background:transparent; }
+ /*  table tr:last-child { background:transparent; } */
+  
+  .mystyle th {
+      background-color: rgb(224, 70, 178);
+  }
