@@ -94,13 +94,12 @@ newShop.addEventListener ( 'submit', function ( event ) {
   const name = event.target.branchName.value;
   const min = Number( event.target.minimumCustomers.value );
   const max = Number( event.target.maximumCustomers.value );
-  const avg = Number( event.target.averageSalesPerCustomer.value );
+  const avg = parseFloat( event.target.averageSalesPerCustomer.value );
   const shop = new Town ( name,min,max,avg ) ;
   newShop.reset();
   document.querySelector( 'table tr:last-child' ).remove();
   shop.render();
   lastRow();
-
 
 } );
 lastRow();
